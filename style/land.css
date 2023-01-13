@@ -1,23 +1,24 @@
 /* css reset and and font family */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:wght@500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-   
+
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 
 }
 
-:root{
-    --text-purple:rgb(119, 35, 197);
+:root {
+    --text-purple: rgb(119, 35, 197);
 }
 
-body{
+body {
     background: #F3F1FF;
 }
-.container{
+
+.container {
     background-color: #FFFFFF;
     width: 870px;
     margin-top: 1.3rem;
@@ -26,43 +27,47 @@ body{
 
 
 /* header style start */
-.header{
+.header {
     background-color: var(--text-purple);
-    
+
 }
-.header-section{
+
+.header-section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 0 1.8rem;
-    
- 
 
-    
-    
-    
+
+
+
+
+
 }
 
-ul  {
+ul {
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
     gap: 2rem;
     padding: 1rem;
 }
 
-li{
+li {
     list-style-type: none;
 }
+
 li a {
     font-size: 1.2rem;
     color: white;
     font-weight: 400;
 }
+
 li img {
     border-radius: 50px;
     border: 3px solid #562EFF;
 }
+
 /* header style end */
 
 
@@ -71,7 +76,7 @@ li img {
 
 /* main style start */
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,45 +86,46 @@ main{
 
 /* top players style start */
 
-.section-title{
+.section-title {
     color: var(--text-purple);
     font-size: 1.5rem;
     padding: 2.063rem 2.063rem 1rem;
 }
 
 
-.player-item{
+.player-item {
     display: flex;
     align-items: center;
     gap: 1rem;
-    
+
 }
 
-.player-name{
+.player-name {
     font-size: 1.5rem;
     font-weight: 500;
 }
 
 
-.player-item img{
+.player-item img {
     width: 56px;
     height: 56px;
-  
-}
-.players-container{
-    display: grid;
-    
-    gap: 1.87rem;
-    grid-template-columns: repeat(3,minmax(250px,1fr));
-    padding: 1.87rem;
-    
+
 }
 
-hr{
+.players-container {
+    display: grid;
+
+    gap: 1.87rem;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    padding: 1.87rem;
+
+}
+
+hr {
     border: 1px solid #D1D1D1;
     background: #D1D1D1;
     margin: 1.87rem;
-    
+
 }
 
 
@@ -133,39 +139,45 @@ top blogs style start */
 
 
 
-.blogs{
+.blogs {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     padding: 2rem 2rem 1rem 2rem;
-   
+
 }
 
-.blog{
+.blog {
     display: flex;
     gap: 1rem;
     /* margin: 2rem 3.5rem 1rem 1rem; */
 
 }
-.blog-info{
+
+.blog-info {
     display: flex;
     flex-direction: column;
-   
+
 }
-.info{
-   padding-right: 2rem;
-   
+
+.info {
+    padding-right: 2rem;
+
 }
-.blog-title{
+
+.blog-title {
     padding-bottom: 0.3rem;
     line-height: 34px;
     font-size: 1.25rem;
 }
-.blog-name{
+
+.blog-name {
     font-size: 1rem;
     color: gray;
 }
-a{  padding-left: 0.1rem;
+
+a {
+    padding-left: 0.1rem;
     text-decoration: none;
     color: #562EFF;
 }
@@ -178,45 +190,50 @@ a{  padding-left: 0.1rem;
 /* course style start */
 
 
-.course-section{
+.course-section {
     padding: 1.87rem;
     display: grid;
     gap: 23px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 2rem;
 }
-.courses{
+
+.courses {
     filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
-    
-    
+
+
 }
-.course-title{
+
+.course-title {
     font-size: 1.2rem;
     padding: 0.5rem 0;
 }
 
-.fa-star{
+.fa-star {
     font-size: 12px;
 }
-.fa-star.filed{
+
+.fa-star.filed {
     color: #FFC014;
 }
-.fa-star.empty{
+
+.fa-star.empty {
     color: #A2A2A2;
 }
-.course-info{
+
+.course-info {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    
+
 }
 
-.course-rating{
+.course-rating {
     color: #A2A2A2;
 }
 
 
-.for-time{
+.for-time {
     color: #ED6B4F;
     display: flex;
     justify-content: center;
@@ -227,6 +244,7 @@ a{  padding-left: 0.1rem;
     background-color: #FFE4E8;
     border-radius: 2rem;
 }
+
 /* course style end */
 
 /* main style end */
@@ -237,25 +255,74 @@ a{  padding-left: 0.1rem;
 /* media quaries */
 
 
-@media screen and (max-width:688px) {
+@media screen and (max-width:677px) {
 
 
     /* player container */
-        .container{
-            text-align: center;
-        }
-    .players-container{
-        grid-template-columns: repeat(1,1fr);
-       grid-column-gap: 2rem;
-        padding: 0 5rem;
-        align-items: end;
-        justify-items: center;
-        /* align-content: center;
-        justify-items: center; */
+    .container {
+        width: 100%;
+        /* margin: 0 auto; */
+       
     }
-    /* .player-item{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    } */
+
+    .players-container {
+
+       
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 2rem;
+        
+        /* padding: 2rem 200px; */
+
+
+
+    }
+
+    .player-item>* {
+        flex: 0 0 auto;
+
+    }
+
+    
+    /* blogs */
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .course-section{
+        grid-template-columns: repeat(1,1fr);
+        
+        
+       
+    }
+    .for-time{
+        margin:0;
+        padding: 0;
+    }
+}
+
+
+@media screen and (min-width:678px) and (max-width:992px){
+   
+
+   
+    .container {
+        margin: auto;
+        width: 100%;
+    }
+   .players-container{
+    grid-template-columns: repeat(1,1fr);
+    
+    margin: 0 2rem 0 0;
+    font-size: 1rem;
+   }
+ 
+   .blogs{
+    grid-template-columns: repeat(1,1fr);
+   }
+    .course-section{
+    grid-template-columns: repeat(2,1fr);
+    
+   }
+
+
 }
