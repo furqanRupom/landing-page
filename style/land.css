@@ -141,7 +141,12 @@ a{  padding-left: 0.1rem;
 
 /* course style start */
 
-
+.fa-star.filed{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #A2A2A2;
+}
 /* course style end */
 
 /* main style end */
