@@ -20,6 +20,7 @@ body{
 .container{
     background-color: #FFFFFF;
     width: 870px;
+    margin-top: 1.3rem;
 }
 
 
@@ -37,7 +38,9 @@ body{
 
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* top players style start */
@@ -98,7 +101,7 @@ top blogs style start */
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 1rem;
-    padding: 2rem 3rem 1rem 2rem;
+    padding: 2rem 2rem 1rem 2rem;
    
 }
 
@@ -108,20 +111,37 @@ top blogs style start */
     /* margin: 2rem 3.5rem 1rem 1rem; */
 
 }
-
+.blog-info{
+    display: flex;
+    flex-direction: column;
+   
+}
+.info{
+   padding-right: 2rem;
+   
+}
 .blog-title{
     padding-bottom: 0.3rem;
     line-height: 34px;
     font-size: 1.25rem;
 }
 .blog-name{
-    font-size: 16px;
+    font-size: 1rem;
+    color: gray;
 }
-/* #logo{
-    line-height: 34px;
-    padding-left: 1rem;
-} */
+a{  padding-left: 0.1rem;
+    text-decoration: none;
+    color: #562EFF;
+}
+
 /* top blogs style end */
 
+
+
+
+/* course style start */
+
+
+/* course style end */
 
 /* main style end */
